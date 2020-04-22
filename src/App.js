@@ -15,8 +15,8 @@ export const App = () => {
     NewData.push(data);
     setTask(NewData);
     axios.post(`http://localhost:4000/api/v1/todos`, {
-      title: data.Title,
-      body: data.Body,
+      title: data.title,
+      body: data.body,
     });
     reset();
   };
@@ -29,14 +29,14 @@ export const App = () => {
           <form onSubmit={handleSubmit(onSubmit)}>
             <input
               type="text"
-              placeholder="Title"
-              name="Title"
+              placeholder="title"
+              name="title"
               ref={register}
             />
             <input
               type="text"
-              placeholder="Body"
-              name="Body"
+              placeholder="body"
+              name="body"
               ref={register}
             />
             <input type="submit" />
@@ -44,7 +44,7 @@ export const App = () => {
         </Col>
         <Col>
           ToDo List
-          <List Task={Task} />
+          <List task={Task} />
         </Col>
       </Row>
     </Container>
