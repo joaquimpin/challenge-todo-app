@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "react": "latest",
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "latest",
+    "react-hook-form": "^5.5.3",
+    "react-scripts": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
